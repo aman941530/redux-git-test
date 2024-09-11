@@ -6,10 +6,15 @@ const ProductPage = () => {
   return (
     <>
       {products.map((product) => {
-        return <div>{product.title}</div>;
+        return (
+          <>
+            <div>{product.title}</div>
+            <div>{product.price}</div>
+          </>
+        );
       })}
     </>
   );
 };
 
-export default ProductPage ;
+export default ProductPage;
